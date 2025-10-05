@@ -9,7 +9,9 @@
 <section>
 <h3>Installation Step 02</h3>
 <p>Configure Credentials by creating .env file in root folder of backend.</p>
-<code>MONGO_URI=paste-your-mongodb-uri /n PORT=5000</code>
+<code>
+MONGO_URI=paste-your-mongodb-uri
+PORT=5000</code>
 </section>
 
 <section>
