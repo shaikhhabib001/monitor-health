@@ -1,7 +1,7 @@
 const app = require('./app');
 const { WebSocketServer } = require('ws');
 const { createServer } = require('http');
-const startSimulator = require('../src/services/simulator');
+const startSimulator = require('./src/services/simulator');
 
 const server = createServer(app);
 const wss = new WebSocketServer({ server });

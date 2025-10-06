@@ -1,14 +1,14 @@
 {
   "version": 2,
   "functions": {
-    "api/server.js": {
+    "server.js": {
       "runtime": "vercel-nodejs@18.0.0"
     }
   },
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/api/server.js"
+      "destination": "server.js"
     }
   ]
 }
