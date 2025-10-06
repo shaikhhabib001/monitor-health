@@ -5,7 +5,7 @@ import LineChart from './LineChart.jsx';
 import { FaHeartbeat, FaBed, FaWalking } from 'react-icons/fa';
 
 const API_URL = 'https://smarthealthmonitoringtool-cftt.vercel.app/api/health-data';
-const WS_URL = 'ws://smarthealthmonitoringtool-cftt.vercel.app/';
+const WS_URL = 'ws://https://smarthealthmonitoringtool-cftt.vercel.app';
 
 const Dashboard = () => {
   const [latestData, setLatestData] = useState(null);
