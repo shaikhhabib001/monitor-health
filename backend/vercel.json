@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "api/server.js": {
-      "runtime": "vercel-nodejs@18.0.0"
+      "runtime": "vercel-nodejs@23.x"
     }
   },
   "rewrites": [
