@@ -1,12 +1,11 @@
-
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import StatCard from './StatCard.jsx';
 import LineChart from './LineChart.jsx';
 import { FaHeartbeat, FaBed, FaWalking } from 'react-icons/fa';
 
-const API_URL = 'http://localhost:5000/api/health-data';
-const WS_URL = 'ws://localhost:5000';
+const API_URL = 'https://smarthealthmonitoringtool-cftt.vercel.app/api/health-data';
+const WS_URL = 'ws://smarthealthmonitoringtool-cftt.vercel.app/';
 
 const Dashboard = () => {
   const [latestData, setLatestData] = useState(null);

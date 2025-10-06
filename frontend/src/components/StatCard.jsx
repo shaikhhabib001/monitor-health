@@ -1,6 +1,3 @@
-
-import React from 'react';
-
 const StatCard = ({ title, value, unit, icon }) => {
   return (
     <div className="bg-slate-800 p-6 rounded-lg shadow-lg flex items-center">

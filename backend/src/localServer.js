@@ -1,6 +1,6 @@
 require('dotenv').config();
 const http = require('http');
-const app = require('../api/app');
+const app = require('../app');
 const { WebSocketServer } = require('ws');
 const startSimulator = require('./services/simulator');
 
