@@ -48,7 +48,6 @@ const startSimulator = (wss) => {
       await newHealthData.save();
       console.log('New health data saved:', newHealthData);
 
-      // Broadcast the new data to all connected WebSocket clients
       wss.clients.forEach(client => {
         if (client.readyState === WebSocket.OPEN) {
           client.send(JSON.stringify(newHealthData));
@@ -58,7 +57,7 @@ const startSimulator = (wss) => {
     } catch (error) {
       console.error('Error saving health data:', error);
     }
-  }, 5000); // Simulate data every 5 seconds
+  }, 5000);
 };
 
 module.exports = startSimulator;
