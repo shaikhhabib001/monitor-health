@@ -20,7 +20,7 @@ ChartJS.register(
   Legend
 );
 
-const LineChart = ({ chartData, title }) => {
+const LineChart = ({ chartData }) => {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
@@ -32,12 +32,7 @@ const LineChart = ({ chartData, title }) => {
         },
       },
       title: {
-        display: true,
-        text: title,
-        color: '#FFFFFF', // White title
-        font: {
-          size: 18,
-        },
+        display: false, // Title will be handled by ChartContainer
       },
     },
     scales: {
@@ -60,11 +55,7 @@ const LineChart = ({ chartData, title }) => {
     },
   };
 
-  return (
-    <div className="bg-slate-800 p-4 rounded-lg shadow-lg h-80">
-      <Line options={options} data={chartData} />
-    </div>
-  );
+  return <Line options={options} data={chartData} />;
 };
 
 export default LineChart;
