@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "start": "node src/localServer.js",
+    "dev": "nodemon src/localServer.js"
   },
   "keywords": [],
   "author": "",
