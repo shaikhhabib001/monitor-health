@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "version": 2,
   "functions": {
     "api/server.js": {
@@ -12,3 +13,18 @@
     }
   ]
 }
+=======
+    "version": 2,
+    "functions": {
+        "server.js": {
+            "runtime": "vercel-nodejs@18.0.0"
+        }
+    },
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/server.js"
+        }
+    ]
+}
+>>>>>>> 0b90a5d2346edf8d9677fb9413a05100bb0f1780
