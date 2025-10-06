@@ -2,8 +2,6 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const { WebSocketServer } = require('ws');
-const startSimulator = require('../src/services/simulator');
 const healthDataRoutes = require('../src/routes/healthDataRoutes');
 
 const app = express();
