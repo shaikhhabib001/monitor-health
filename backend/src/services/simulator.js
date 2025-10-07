@@ -3,9 +3,9 @@ const HealthData = require('../models/HealthData');
 const WebSocket = require('ws'); 
 
 let patientId = 'Patient_001';
-let lastHeartRate = 75;
-let lastSteps = 0;
-let lastSleepHours = 0;
+// let lastHeartRate = 75;
+// let lastSteps = 0;
+// let lastSleepHours = 0;
 
 const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;

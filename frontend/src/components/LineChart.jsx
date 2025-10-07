@@ -32,24 +32,24 @@ const LineChart = ({ chartData }) => {
         },
       },
       title: {
-        display: false, // Title will be handled by ChartContainer
+        display: false,
       },
     },
     scales: {
       x: {
         ticks: {
-          color: '#2DD4BF', // Cool Teal for x-axis labels
+          color: '#2DD4BF',
         },
         grid: {
-          color: 'rgba(45, 212, 191, 0.1)', // Lighter grid lines
+          color: 'rgba(45, 212, 191, 0.1)',
         },
       },
       y: {
         ticks: {
-          color: '#2DD4BF', // Cool Teal for y-axis labels
+          color: '#2DD4BF',
         },
         grid: {
-          color: 'rgba(45, 212, 191, 0.1)', // Lighter grid lines
+          color: 'rgba(45, 212, 191, 0.1)',
         },
       },
     },

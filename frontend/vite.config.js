@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://smarthealthmonitoringtool-cftt.vercel.app',
+        target: 'http://localhost:5000',
         changeOrigin: true,
       },
     },

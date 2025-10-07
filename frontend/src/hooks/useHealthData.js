@@ -26,7 +26,6 @@ export const useHealthData = () => {
     isMountedRef.current = true;
     const { API_URL, WS_URL } = getUrls();
 
-    // Fetch initial historical data
     const fetchHistory = async () => {
       try {
         const res = await axios.get(`${API_URL}/history`);
@@ -42,7 +41,6 @@ export const useHealthData = () => {
 
     fetchHistory();
 
-    // WebSocket connection with exponential backoff reconnect
     let reconnectAttempts = 0;
 
     const connect = () => {
@@ -78,7 +76,6 @@ export const useHealthData = () => {
 
         ws.onerror = (err) => {
           console.error('WebSocket error', err);
-          // onclose will trigger reconnect
         };
       } catch (err) {
         console.error('WebSocket connect error', err);
